@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+// import {AiOutlineSearch} from 'react-icons/ai';
+// import {BsSearch} from 'react-icons/bs';
+import { FaBeer } from 'react-icons/fa';
 function App() {
+  const searchBar = <FaBeer size ={42}/>
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className='dark-mode-toggle-div'>
+        
+      </div>
+      <div className='search-input-div'>
+        <form>
+          <input 
+          className = 'search-input'
+          placeholder= '@example'
+          />
+          <i>
+            {searchBar}
+          </i>
+        </form>
+        
+      </div>
+      
     </div>
   );
 }
