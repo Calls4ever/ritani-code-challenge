@@ -7,7 +7,7 @@ const UserPage = (props)=>{
     }
     //There are few divs, many of them structured in this way for styling purposes
     //The div with class name of 'user-container' holds all the element in this component
-    //There are three main parts, the div containing user details, follower list and conditional render of load more button
+    //There are three main parts, the div containing user details, follower list (<ul/>) and conditional render of load more button
     //The user details div divided into one <section>, one <h1/> and one <p/>
     //The section in the user detail contains user details like nam, username etc..
     return(
