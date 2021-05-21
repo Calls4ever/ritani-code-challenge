@@ -4,12 +4,18 @@
 .dark{
   background-color: black;
   color: white;
+  border:inherit;
+  border-color: red;
+  box-shadow: none;
 }
 
 
 .light{
   background-color: white;
   color: black;
+  border:inherit;
+  border-color: white;
+  box-shadow: inherit lightgrey;
 }
 
 .search-input-div{
@@ -26,15 +32,118 @@
   padding: 5px;
   border: rgb(231, 222, 180) .5px solid;
   border-radius: 10px;
-  /* box-shadow: 2px 2px 4px 1px rgb(243, 234, 194); */
+}
+.search-input:focus{
+  outline: none;
 }
 .dark-mode-toggle-div{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1%;
+  padding: 1.5%;
 }
 .theme-mode-button{
   border: none;
   background: rgba(250, 250,250, 0.001);
 }
+.loading-div{
+  min-height: 80vh;
+  margin-top: 10px;
+  padding: 20px;
+}
+.loading{
+  animation: rotation 1.5s infinite linear;
+}
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.user-details-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.user-avatar{
+  width: 350px;
+  height: 350px;
+  
+}
+.user-container{
+width: 720px;
+margin: 10px;
+padding: 10px;
+}
+.user-details-div{
+  padding: 15px;
+  box-shadow: 2px 2px 6px 2px lightgrey;
+}
+.user-details-div-dark{
+  border: 1px rgb(231, 222, 180) solid;
+  padding: 15px;
+}
+.user-name-div{
+  padding-left: 20px;
+  margin: auto;
+  
+}
+.user-name-div>h3{
+  color: grey;
+  font-weight: normal;
+}
+
+.user-bio{
+}
+.follower-list{
+  list-style-type: none;
+  width: 720px;
+}
+.follower-list>li{
+  border-bottom: .15px rgb(231, 222, 180) solid;
+}
+
+.follower-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px
+}
+.follower-container:hover{
+  color: grey;
+}
+.follower-avatar{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.load-more-button{
+  margin: auto;
+  width: 300px;
+  height: 35px;
+  font-size: 25px;
+  border: none;
+  background: none;
+}
+.load-more-button:hover{
+  color: grey
+}
+.four-o-four{
+ font-weight: lighter;
+ font-size: 69px;
+ text-align: center;
+}
+.user-not-found{
+  font-weight: normal;
+  font-size: 43px;
+}
+.search-another{
+  font-weight: normal;
+  color: grey;
+  text-align: center;
+}
+
+@media screen and (wid)
