@@ -148,7 +148,7 @@ padding: 10px;
 
 @media only screen and (max-width: 720px){
   .user-container{
-    width: 500px;
+    width: 480px;
   }
   .user-details-section{
     flex-direction: column;
@@ -156,7 +156,7 @@ padding: 10px;
     align-items: center;
   }
   .follower-list{
-    width: 480px
+    width: 440px
   }
   .follower-container>h2{
   font-weight: normal;

@@ -87,10 +87,10 @@ const HomePage=(props)=> {
 
 //adjusting the length (width) of the search input when it is on focus or out of focus
 const handleOnFocus=e=>{
-    e.target.style='width: 580px;'
+    e.target.style='width: 450px;'
 }
 const handleOnBlur=e=>{
-    e.target.style='width: 360px;'
+    e.target.style='width: 320px;'
 }
 
 //fetchFollowers
