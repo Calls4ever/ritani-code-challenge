@@ -1,5 +1,5 @@
 # GitHub User Look Up
-##user Stories
+## user Stories
 1. As a user, I should be able switch to dark mode or light mode from any where.
 2. As a user I should be able to enter user name in an input and search that user by pressing enter
 3. As a user I should be able to see loading animation while waiting for the data to be rendered.
