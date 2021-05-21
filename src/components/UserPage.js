@@ -26,10 +26,10 @@ const UserPage = (props)=>{
                            <a className ='user-link-github' href={props.user.user.html_url}> @{props.user.user.login.toLowerCase()}</a>
                         </h2>
                         <h3>Lives in: {props.user.user.location} </h3>
-                        <h3>Public Repos {props.user.user.public_repos} </h3>
-                        <h3>Rendered Followers {props.user.followers.length} </h3>
-                        <h3 > Pushing commits since:</h3>
-                        <h3>{new Date(props.user.user.created_at).toLocaleDateString()}</h3>
+                        <h3>Public Repos: {props.user.user.public_repos} </h3>
+                        <h3>Rendered Followers: {props.user.followers.length} </h3>
+                        <h3 > Pushing commits since: 
+                        {new Date(props.user.user.created_at).toLocaleDateString()}</h3>
                    </div>
                    
                 </section>

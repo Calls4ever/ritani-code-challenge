@@ -146,4 +146,27 @@ padding: 10px;
   text-align: center;
 }
 
-@media screen and (wid)
+@media only screen and (max-width: 720px){
+  .user-container{
+    width: 500px;
+  }
+  .user-details-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .follower-list{
+    width: 480px
+  }
+  .follower-container>h2{
+  font-weight: normal;
+  font-size: 22px;
+
+  }
+  .follower-container>h3{
+    font-weight: normal;
+    font-size: 18px;
+    
+    }
+
+}

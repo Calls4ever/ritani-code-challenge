@@ -62,7 +62,7 @@ const HomePage=(props)=> {
     
   }
 const handleOnFocus=e=>{
-    e.target.style='width: 600px;'
+    e.target.style='width: 580px;'
 }
 const handleOnBlur=e=>{
     e.target.style='width: 360px;'
